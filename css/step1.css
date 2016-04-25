@@ -1,0 +1,398 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #213534;
+}
+
+#container {
+  position: relative;
+  height: calc(100vh - 20px);
+  width: 100vw;
+}
+
+/*************/
+/*DONALD ZOMB*/
+/*************/
+#donald {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  height: 600px;
+  width: 680px;
+  background-image: url(../img/zombie/Donald-face-no-eyes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#donald #eyeleft {
+  position: absolute;
+  background: url(../img/zombie/eye-left.png) no-repeat center center;
+  background-size: contain;
+  height: 98px;
+  width: 98px;
+  top: 247px;
+  left: 290px;
+  -webkit-animation: blink 6s linear infinite;
+          animation: blink 6s linear infinite;
+}
+
+#donald #eyeright {
+  position: absolute;
+  background: url(../img/zombie/eye-right.png) no-repeat center center;
+  background-size: contain;
+  height: 120px;
+  width: 120px;
+  top: 200px;
+  right: 160px;
+  -webkit-animation: blink 6s linear infinite;
+          animation: blink 6s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  49% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  50% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+  51% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  49% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  50% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+  51% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+/****************/
+/*Speech Bubbles*/
+/****************/
+#speech {
+  height: 100vh;
+  width: 60%;
+  /*******************************/
+  /* Speech bubble with a shadow */
+  /*******************************/
+}
+
+#speech span {
+  text-transform: capitalize;
+  color: #d12222;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+}
+
+#speech .bubble {
+  /* Keep speech bubbles hidden at the beginning */
+  -webkit-transform: translateX(-800px);
+      -ms-transform: translateX(-800px);
+          transform: translateX(-800px);
+  background-color: #fff0a0;
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 3px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #333;
+  display: inline-block;
+  font: 32px/50px sans-serif;
+  margin: 25px 10px;
+  padding: 30px 50px;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#speech .bubble:after,
+#speech .bubble:before {
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #fff0a0;
+  top: 20px;
+  content: '';
+  position: absolute;
+  right: -6px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#speech #say1 {
+  -webkit-animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 0.1s forwards 1;
+          animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 0.1s forwards 1;
+}
+
+#speech #say2 {
+  -webkit-animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 2s forwards 1;
+          animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 2s forwards 1;
+}
+
+#speech #say3 {
+  -webkit-animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 4s forwards 1;
+          animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 4s forwards 1;
+}
+
+#speech #say4 {
+  -webkit-animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 6s forwards 1;
+          animation: slideToRight 1s cubic-bezier(0.66, 0.19, 0.49, 1.27) 6s forwards 1;
+}
+
+@-webkit-keyframes slideToRight {
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slideToRight {
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
