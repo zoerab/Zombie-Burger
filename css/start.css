@@ -368,3 +368,37 @@ h3 {
   color: #ffb500;
   transition: color .7s;
 }
+
+.slider {
+  position: fixed;
+  margin-right: 50px;
+  height: 100vh;
+  width: 100px;
+  background-size: contain;
+}
+
+#pumpkin1 {
+  left: 50px;
+  background-image: url(../img/decor/pumpkin-1.png);
+  -webkit-animation: slideDown 10s linear infinite;
+          animation: slideDown 10s linear infinite;
+}
+
+#pumpkin2 {
+  right: 50px;
+  background-image: url(../img/decor/pumpkin-2.png);
+  -webkit-animation: slideDown 10s linear infinite reverse;
+          animation: slideDown 10s linear infinite reverse;
+}
+
+@-webkit-keyframes slideDown {
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes slideDown {
+  100% {
+    background-position: 0 100%;
+  }
+}
