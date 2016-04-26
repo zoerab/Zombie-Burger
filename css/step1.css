@@ -328,7 +328,7 @@ body {
 
 #speech span {
   text-transform: capitalize;
-  color: #d12222;
+  color: crimson;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
 }
 
@@ -395,4 +395,33 @@ body {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+/**************************/
+/* Next button (get busy) */
+/**************************/
+.btnNext {
+  display: block;
+  position: fixed;
+  height: 50px;
+  width: 200px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px 10px 0 0;
+  background-color: crimson;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translate(-100px, 0px);
+      -ms-transform: translate(-100px, 0px);
+          transform: translate(-100px, 0px);
+  transition: background-color .6s;
+}
+
+.btnNext:hover {
+  background-color: #f0f045;
+  color: #10121f;
+  transition: background-color .7s;
 }
