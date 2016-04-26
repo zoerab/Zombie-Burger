@@ -380,15 +380,15 @@ h3 {
 #pumpkin1 {
   left: 50px;
   background-image: url(../img/decor/pumpkin-1.png);
-  -webkit-animation: slideDown 10s linear infinite;
-          animation: slideDown 10s linear infinite;
+  -webkit-animation: slideDown 10s linear infinite alternate-reverse;
+          animation: slideDown 10s linear infinite alternate-reverse;
 }
 
 #pumpkin2 {
   right: 50px;
   background-image: url(../img/decor/pumpkin-2.png);
-  -webkit-animation: slideDown 10s linear infinite reverse;
-          animation: slideDown 10s linear infinite reverse;
+  -webkit-animation: slideDown 10s linear infinite alternate;
+          animation: slideDown 10s linear infinite alternate;
 }
 
 @-webkit-keyframes slideDown {
