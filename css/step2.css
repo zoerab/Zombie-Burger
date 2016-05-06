@@ -219,3 +219,85 @@ th {
   margin: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  background-color: #213534;
+}
+
+main {
+  position: relative;
+  height: 97vh;
+  top: calc(100vh - 97vh);
+  margin: 0px auto;
+  width: 160px;
+}
+
+main #bun-top {
+  background: url(../img/burger/9_bun_top.png) center center no-repeat;
+  top: 0px;
+  animation: slideFromLeft 1s ease 0s forwards;
+}
+
+main #bacon {
+  background: url(../img/burger/8_bacon.png) center center no-repeat;
+  top: 70px;
+  animation: slideFromLeft 1s ease 1s forwards;
+}
+
+main #lettuce {
+  background: url(../img/burger/7_lettuce.png) center center no-repeat;
+  top: 140px;
+  animation: slideFromLeft 1s ease 2s forwards;
+}
+
+main #tomatos {
+  background: url(../img/burger/6_tomato.png) center center no-repeat;
+  top: 210px;
+  animation: slideFromLeft 1s ease 3s forwards;
+}
+
+main #brains {
+  background: url(../img/burger/brains_02.png) center center no-repeat;
+  top: 280px;
+  height: 105px;
+  animation: slideFromLeft 1s ease 4s forwards;
+}
+
+main #cheese {
+  background: url(../img/burger/4_cheese.png) center center no-repeat;
+  top: 385px;
+  animation: slideFromLeft 1s ease 5s forwards;
+}
+
+main #meat {
+  background: url(../img/burger/3_meat.png) center center no-repeat;
+  top: 455px;
+  animation: slideFromLeft 1s ease 6s forwards;
+}
+
+main #ketchup {
+  background: url(../img/burger/2_ketchup.png) center center no-repeat;
+  top: 525px;
+  animation: slideFromLeft 1s ease 7s forwards;
+}
+
+main #bun-bottom {
+  background: url(../img/burger/1_bun_bottom.png) center center no-repeat;
+  top: 595px;
+  animation: slideFromLeft 1s ease 8s forwards;
+}
+
+main .burger {
+  position: absolute;
+  width: 160px;
+  background-size: contain !important;
+  height: 70px;
+  left: -1000px;
+}
+
+@keyframes slideFromLeft {
+  100% {
+    left: 0;
+  }
+}

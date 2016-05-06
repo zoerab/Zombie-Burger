@@ -1,3 +1,93 @@
 @import 'normalize';
 @import 'reset';
 
+$burger-width: 160px;
+//$burger-width: 200px;
+$burger-height: 70px;
+$background-suffix: "center center no-repeat";
+
+
+html,
+body {
+	background-color: hsl(177, 23%, 17%);
+}
+
+main {
+	position: relative;
+	height: 97vh;
+	top: calc(100vh - 97vh);
+	margin: 0px auto;
+	width: $burger-width;
+
+//	background-color: aquamarine;
+
+	#bun-top {
+		background: url(../img/burger/9_bun_top.png) #{$background-suffix};
+		top: $burger-height * 0;
+		animation: slideFromLeft 1s ease 0s forwards;
+	}
+
+	#bacon {
+		background: url(../img/burger/8_bacon.png) #{$background-suffix};
+		top: $burger-height * 1;
+		animation: slideFromLeft 1s ease 1s forwards;
+	}
+
+	#lettuce {
+		background: url(../img/burger/7_lettuce.png) #{$background-suffix};
+		top: $burger-height * 2;
+		animation: slideFromLeft 1s ease 2s forwards;
+	}
+
+	#tomatos {
+		background: url(../img/burger/6_tomato.png) #{$background-suffix};
+		top: $burger-height * 3;
+		animation: slideFromLeft 1s ease 3s forwards;
+	}
+
+	#brains {
+		background: url(../img/burger/brains_02.png) #{$background-suffix};
+		top: $burger-height * 4;
+		height: $burger-height * 1.5;
+		animation: slideFromLeft 1s ease 4s forwards;
+	}
+
+	#cheese {
+		background: url(../img/burger/4_cheese.png) #{$background-suffix};
+		top: $burger-height * 5.5 ;
+		animation: slideFromLeft 1s ease 5s forwards;
+	}
+
+	#meat {
+		background: url(../img/burger/3_meat.png) #{$background-suffix};
+		top: $burger-height * 6.5;
+		animation: slideFromLeft 1s ease 6s forwards;
+	}
+
+	#ketchup{
+		background: url(../img/burger/2_ketchup.png) #{$background-suffix};
+		top: $burger-height * 7.5;
+		animation: slideFromLeft 1s ease 7s forwards;
+	}
+
+	#bun-bottom{
+		background: url(../img/burger/1_bun_bottom.png) #{$background-suffix};
+		top: $burger-height * 8.5;
+		animation: slideFromLeft 1s ease 8s forwards;
+	}
+
+	.burger {
+		position: absolute;
+		width: $burger-width;
+		background-size: contain !important;
+		height: $burger-height;
+		left: -1000px;
+	}
+
+}
+
+@keyframes slideFromLeft {
+	100%{
+		left: 0;
+	}
+}
