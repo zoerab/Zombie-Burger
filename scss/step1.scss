@@ -1,6 +1,9 @@
 @import 'normalize';
 @import 'reset';
 
+$blink-left: 5s;
+$blink-right: 5s;
+
 html,
 body {
 	background-color: hsl(177, 23%, 17%);
@@ -34,7 +37,7 @@ body {
 		width: 98px;
 		top: 247px;
 		left: 290px;
-		animation: blink 6s linear infinite;
+		animation: blink $blink-left linear infinite;
 	}
 
 	#eyeright{
@@ -45,7 +48,7 @@ body {
 		width: 120px;
 		top: 200px;
 		right: 160px;
-		animation: blink 6s linear infinite;
+		animation: blink $blink-right linear infinite;
 	}
 }
 
@@ -74,7 +77,9 @@ body {
 
 #speech{
 	height: 100vh;
-	width: 60%;
+	width: 50%;
+	position: relative;
+	z-index: 100;
 
 	span{
 		text-transform: capitalize;
@@ -153,13 +158,24 @@ body {
 	border-radius: 10px 10px 0 0;
 	background-color: crimson;
 	left: 50%;
-	bottom: 0px;
+	bottom: -50px;
+	z-index: 200;
 	transform: translate(-100px, 0px);
 	transition: background-color .6s;
+	animation: slideUp .6s ease-out 6.5s forwards 1;
 
 	&:hover{
 		background-color: #f0f045;
 		color: #10121f;
 		transition: background-color .7s;
+	}
+}
+
+@keyframes slideUp {
+	0%{
+		bottom: -50px;
+	}
+	100%{
+		bottom: 0px;
 	}
 }
