@@ -220,9 +220,38 @@ th {
   box-sizing: border-box;
 }
 
+/*************** Variables ***************/
+/*************** STYLE ***************/
 html,
 body {
   background-color: #213534;
+  height: 100vh;
+}
+
+/* basic structure for the rays setup */
+#raysScene {
+  position: absolute;
+  width: 490px;
+  height: 490px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: showRays 0.8s linear 14s 1 forwards;
+}
+
+#rays {
+  /* with animation properties */
+  background: url(../img/bg/rays.png) 0 0 no-repeat;
+  position: absolute;
+  width: 490px;
+  height: 490px;
+  /* microsoft ie */
+  animation-name: spin;
+  animation-duration: 40000ms;
+  /* 40 seconds */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 main {
@@ -236,25 +265,25 @@ main {
 main #bun-top {
   background: url(../img/burger/9_bun_top.png) center center no-repeat;
   top: 0px;
-  animation: slideFromLeft 1s ease 0s forwards;
+  animation: slideFromLeft 1s ease 0s forwards, bunTopSqueeze 0.6s ease-out 13s forwards;
 }
 
 main #bacon {
   background: url(../img/burger/8_bacon.png) center center no-repeat;
   top: 70px;
-  animation: slideFromLeft 1s ease 1s forwards;
+  animation: slideFromLeft 1s ease 1s forwards, baconSqueeze 0.6s ease-out 12s forwards;
 }
 
 main #lettuce {
   background: url(../img/burger/7_lettuce.png) center center no-repeat;
   top: 140px;
-  animation: slideFromLeft 1s ease 2s forwards;
+  animation: slideFromLeft 1s ease 2s forwards, lettuceSqueeze 0.6s ease-out 11s forwards;
 }
 
 main #tomatos {
   background: url(../img/burger/6_tomato.png) center center no-repeat;
   top: 210px;
-  animation: slideFromLeft 1s ease 3s forwards;
+  animation: slideFromLeft 1s ease 3s forwards, tomatosSqueeze 0.6s ease-out 10s forwards;
 }
 
 main #brains {
@@ -267,25 +296,25 @@ main #brains {
 main #cheese {
   background: url(../img/burger/4_cheese.png) center center no-repeat;
   top: 385px;
-  animation: slideFromLeft 1s ease 5s forwards;
+  animation: slideFromLeft 1s ease 5s forwards, cheeseSqueeze 0.6s ease-out 10s forwards;
 }
 
 main #meat {
   background: url(../img/burger/3_meat.png) center center no-repeat;
   top: 455px;
-  animation: slideFromLeft 1s ease 6s forwards;
+  animation: slideFromLeft 1s ease 6s forwards, meatSqueeze 0.6s ease-out 11s forwards;
 }
 
 main #ketchup {
   background: url(../img/burger/2_ketchup.png) center center no-repeat;
   top: 525px;
-  animation: slideFromLeft 1s ease 7s forwards;
+  animation: slideFromLeft 1s ease 7s forwards, ketchupSqueeze 0.6s ease-out 12s forwards;
 }
 
 main #bun-bottom {
   background: url(../img/burger/1_bun_bottom.png) center center no-repeat;
   top: 595px;
-  animation: slideFromLeft 1s ease 8s forwards;
+  animation: slideFromLeft 1s ease 8s forwards, bunBottomSqueeze 0.6s ease-out 13s forwards;
 }
 
 main .burger {
@@ -296,8 +325,77 @@ main .burger {
   left: -1000px;
 }
 
+/*************** Keyframes ***************/
 @keyframes slideFromLeft {
   100% {
     left: 0;
+  }
+}
+
+@keyframes bunBottomSqueeze {
+  100% {
+    top: 388px;
+  }
+}
+
+@keyframes ketchupSqueeze {
+  100% {
+    top: 381px;
+  }
+}
+
+@keyframes meatSqueeze {
+  100% {
+    top: 354px;
+  }
+}
+
+@keyframes cheeseSqueeze {
+  100% {
+    top: 343px;
+  }
+}
+
+@keyframes tomatosSqueeze {
+  100% {
+    top: 258px;
+  }
+}
+
+@keyframes lettuceSqueeze {
+  100% {
+    top: 240px;
+  }
+}
+
+@keyframes baconSqueeze {
+  100% {
+    top: 230px;
+  }
+}
+
+@keyframes bunTopSqueeze {
+  100% {
+    top: 200px;
+  }
+}
+
+/* RAYS animation */
+/* keyframes for animation;  simple 0 to 360 */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showRays {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
