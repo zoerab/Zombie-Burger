@@ -84,7 +84,7 @@ body {
 	span{
 		text-transform: capitalize;
 		color: crimson;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+//		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
 	}
 
 	/*******************************/
@@ -100,7 +100,8 @@ body {
 		box-shadow: inset 0 1px 1px hsla(0, 0%, 100%, .5), 3px 3px 0 hsla(0, 0%, 0%, .1);
 		color: #333;
 		display: inline-block;
-		font: 32px/50px sans-serif;
+		font: 28px/48px sans-serif;
+//		font: 32px/50px sans-serif;
 		margin: 25px 10px;
 		padding: 30px 50px;
 		position: relative;
