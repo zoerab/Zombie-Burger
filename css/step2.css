@@ -298,7 +298,7 @@ main #tomatos {
 }
 
 main #brains {
-  background: url(../img/burger/brains_02.png) center center no-repeat;
+  background: url(../img/burger/5_brains.png) center center no-repeat;
   top: 280px;
   height: 105px;
   -webkit-animation: slideFromLeft 1s ease 4s forwards;
