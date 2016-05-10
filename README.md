@@ -7,4 +7,5 @@ This time our host Donald Zomb will teach us how to make a delicious burger for 
 
 All graphic materials are coming from following sources:
 
-- [Designed by Freepik](http://www.freepik.com)
+- [Freepik](http://www.freepik.com)
+- [Alekksall](http://www.freepik.com/alekksall)
