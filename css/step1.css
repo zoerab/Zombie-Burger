@@ -335,9 +335,9 @@ body {
 
 #speech .bubble {
   /* Keep speech bubbles hidden at the beginning */
-  -webkit-transform: translateX(-800px);
-      -ms-transform: translateX(-800px);
-          transform: translateX(-800px);
+  -webkit-transform: translateX(-1500px);
+      -ms-transform: translateX(-1500px);
+          transform: translateX(-1500px);
   background-color: #fff0a0;
   background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
   border-radius: 10px;
@@ -385,6 +385,10 @@ body {
 }
 
 @-webkit-keyframes slideToRight {
+  0% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -392,6 +396,10 @@ body {
 }
 
 @keyframes slideToRight {
+  0% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
