@@ -43,63 +43,65 @@ body {
 
 main {
 	position: relative;
-	height: 97vh;
-	top: calc(100vh - 97vh);
-	margin: 0px auto;
+	max-height: 100vh;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: $burger-width;
 
 	#bun-top {
 		background: url(../img/burger/9_bun_top.png) #{$background-suffix};
-		top: $burger-height * 0;
+		top: -400px;
 		animation: slideFromLeft 1s ease 0s forwards, bunTopSqueeze $squeeze-duration ease-out $squeeze-delay + 3s forwards;
 	}
 
 	#bacon {
 		background: url(../img/burger/8_bacon.png) #{$background-suffix};
-		top: $burger-height * 1;
+		top: -300px;
 		animation: slideFromLeft 1s ease 1s forwards, baconSqueeze $squeeze-duration ease-out $squeeze-delay + 2s forwards;
 	}
 
 	#lettuce {
 		background: url(../img/burger/7_lettuce.png) #{$background-suffix};
-		top: $burger-height * 2;
+		top: -200px;
 		animation: slideFromLeft 1s ease 2s forwards, lettuceSqueeze $squeeze-duration ease-out $squeeze-delay + 1s forwards;
 	}
 
 	#tomatos {
 		background: url(../img/burger/6_tomato.png) #{$background-suffix};
-		top: $burger-height * 3;
+		top: -100px;
 		animation: slideFromLeft 1s ease 3s forwards, tomatosSqueeze $squeeze-duration ease-out $squeeze-delay + 0s forwards;
 	}
 
 	#brains {
 		background: url(../img/burger/5_brains.png) #{$background-suffix};
-		top: $burger-height * 4;
+		top: 0;
 		height: $burger-height * 1.5;
 		animation: slideFromLeft 1s ease 4s forwards;
 	}
 
 	#cheese {
 		background: url(../img/burger/4_cheese.png) #{$background-suffix};
-		top: $burger-height * 5.5 ;
+		top: 100px;
 		animation: slideFromLeft 1s ease 5s forwards, cheeseSqueeze $squeeze-duration ease-out $squeeze-delay + 0s forwards;;
 	}
 
 	#meat {
 		background: url(../img/burger/3_meat.png) #{$background-suffix};
-		top: $burger-height * 6.5;
+		top: 200px;
 		animation: slideFromLeft 1s ease 6s forwards, meatSqueeze $squeeze-duration ease-out $squeeze-delay + 1s forwards;
 	}
 
 	#ketchup{
 		background: url(../img/burger/2_ketchup.png) #{$background-suffix};
-		top: $burger-height * 7.5;
+		top: 300px;
 		animation: slideFromLeft 1s ease 7s forwards, ketchupSqueeze $squeeze-duration ease-out $squeeze-delay + 2s forwards;;
 	}
 
 	#bun-bottom{
 		background: url(../img/burger/1_bun_bottom.png) #{$background-suffix};
-		top: $burger-height * 8.5;
+		top: 400px;
 		animation: slideFromLeft 1s ease 8s forwards, bunBottomSqueeze $squeeze-duration ease-out $squeeze-delay + 3s forwards;
 	}
 
@@ -110,7 +112,6 @@ main {
 		height: $burger-height;
 		left: -1000px;
 	}
-
 }
 
 /*************** Keyframes ***************/
@@ -123,49 +124,49 @@ main {
 
 @keyframes bunBottomSqueeze {
 	100%{
-		top: 388px;
+		top: 115px;
 	}
 }
 
 @keyframes ketchupSqueeze {
 	100% {
-		top: 381px;
+		top: 105px;
 	}
 }
 
 @keyframes meatSqueeze {
 	100% {
-		top: 354px;
+		top: 77px;
 	}
 }
 
 @keyframes cheeseSqueeze {
 	100% {
-		top: 343px;
+		top: 66px;
 	}
 }
 
 @keyframes tomatosSqueeze {
 	100% {
-		top: 258px;
+		top: -24px;
 	}
 }
 
 @keyframes lettuceSqueeze {
 	100% {
-		top: 240px;
+		top: -40px;
 	}
 }
-
+//
 @keyframes baconSqueeze {
 	100% {
-		top: 230px;
+		top: -51px;
 	}
 }
 
 @keyframes bunTopSqueeze {
 	100% {
-		top: 200px;
+		top: -80px;
 	}
 }
 
