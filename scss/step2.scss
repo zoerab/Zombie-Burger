@@ -52,25 +52,26 @@ main {
 
 	#bun-top {
 		background: url(../img/burger/9_bun_top.png) #{$background-suffix};
-		top: -400px;
+		top: -280px;
 		animation: slideFromLeft 1s ease 0s forwards, bunTopSqueeze $squeeze-duration ease-out $squeeze-delay + 3s forwards;
 	}
 
 	#bacon {
 		background: url(../img/burger/8_bacon.png) #{$background-suffix};
-		top: -300px;
+		top: -210px;
 		animation: slideFromLeft 1s ease 1s forwards, baconSqueeze $squeeze-duration ease-out $squeeze-delay + 2s forwards;
 	}
 
 	#lettuce {
 		background: url(../img/burger/7_lettuce.png) #{$background-suffix};
-		top: -200px;
+		top: -140px;
 		animation: slideFromLeft 1s ease 2s forwards, lettuceSqueeze $squeeze-duration ease-out $squeeze-delay + 1s forwards;
 	}
 
 	#tomatos {
 		background: url(../img/burger/6_tomato.png) #{$background-suffix};
-		top: -100px;
+		top: -70px;
+//		top: -100px;
 		animation: slideFromLeft 1s ease 3s forwards, tomatosSqueeze $squeeze-duration ease-out $squeeze-delay + 0s forwards;
 	}
 
@@ -83,25 +84,25 @@ main {
 
 	#cheese {
 		background: url(../img/burger/4_cheese.png) #{$background-suffix};
-		top: 100px;
+		top: 80px;
 		animation: slideFromLeft 1s ease 5s forwards, cheeseSqueeze $squeeze-duration ease-out $squeeze-delay + 0s forwards;;
 	}
 
 	#meat {
 		background: url(../img/burger/3_meat.png) #{$background-suffix};
-		top: 200px;
+		top: 160px;
 		animation: slideFromLeft 1s ease 6s forwards, meatSqueeze $squeeze-duration ease-out $squeeze-delay + 1s forwards;
 	}
 
 	#ketchup{
 		background: url(../img/burger/2_ketchup.png) #{$background-suffix};
-		top: 300px;
+		top: 240px;
 		animation: slideFromLeft 1s ease 7s forwards, ketchupSqueeze $squeeze-duration ease-out $squeeze-delay + 2s forwards;;
 	}
 
 	#bun-bottom{
 		background: url(../img/burger/1_bun_bottom.png) #{$background-suffix};
-		top: 400px;
+		top: 320px;
 		animation: slideFromLeft 1s ease 8s forwards, bunBottomSqueeze $squeeze-duration ease-out $squeeze-delay + 3s forwards;
 	}
 
@@ -181,5 +182,3 @@ main {
 	from { opacity: 0;}
 	to { opacity: 1;}
 }
-
-
